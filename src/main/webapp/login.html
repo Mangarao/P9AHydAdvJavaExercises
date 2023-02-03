@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: olive;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #ccc;
+        margin: auto;
+        width: 400px;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+      input[type="text"],
+      input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      
+      input[type="submit"] {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: royalblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+       <label for="password">Keyword to perform Google search:</label>
+      <input type="text" name="keyword"/> <br/>
+      <input type="submit" value="Submit"> <br/>
+    </form> 
+  </body>
+</html>
